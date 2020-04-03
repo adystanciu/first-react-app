@@ -19,7 +19,7 @@ class App extends React.Component {
       searchField: '',
       monsters: []
     };
-    
+
   }
 
   handleChange = (e) => { this.setState({ searchField: e.target.value }) };
@@ -68,7 +68,7 @@ class App extends React.Component {
           <div>
             <h1>Carousel</h1>
           </div>
-          
+
           <div >
             <Button type="button" label="Show Carosel"
               className="p-button-raised p-button-rounded"
@@ -79,7 +79,7 @@ class App extends React.Component {
               ref={(el) => this.op = el}>
 
               <Carousel
-                value={this.state.monsters}
+                value={monsters}
                 itemTemplate={this.monsterTemplate}
                 numVisible={2}
                 numScroll={2}
@@ -87,7 +87,7 @@ class App extends React.Component {
                 footer={'Footer'}
               />
             </OverlayPanel>
-            
+
           </div>
         </div>
       </div>
