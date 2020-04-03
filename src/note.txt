@@ -1,0 +1,5 @@
+* A good rule of thumb is this: Use arrow functions on any class methods you define and aren't part of React 
+(i.e. render(), componentDidMount()), because they are bind automatically with the context.
+
+* Functional components are the best type of component to render if you don't need access to state or lifecycle methods! It has benefits of being easy to test, easier to read, and easier to write!
+
